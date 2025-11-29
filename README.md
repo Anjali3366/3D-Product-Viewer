@@ -44,7 +44,7 @@ MongoDB (local or Atlas)
 1. **Clone the repository**
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Anjali3366/3D-Product-Viewer.git
 cd 3d-product-viewer
 ```
 
@@ -52,7 +52,7 @@ cd 3d-product-viewer
 
 ```bash
 cd backend
-npm install
+pnpm install
 ```
 
 Create `.env` file:
@@ -66,7 +66,7 @@ PORT=5000
 
 ```bash
 cd ../frontend
-npm install
+pnpm install
 ```
 
 Create `.env` file:
@@ -99,9 +99,9 @@ Open browser: `http://localhost:3000`
 3d-product-viewer/
 ├── backend/
 │   ├── models/
-│   │   └── ViewerSettings.js       # MongoDB schema
+│   │   └── ViewerSettings.model.js       # MongoDB schema
 │   ├── routes/
-│   │   └── api.js                  # API endpoints
+│   │   └── api.route.js                  # API endpoints
 │   ├── uploads/                    # Uploaded models storage
 │   ├── server.js                   # Express server
 │   ├── package.json
@@ -223,7 +223,7 @@ MIT License - feel free to use this project for learning and development.
 
 ## 👨‍💻 Author
 
-Your Name - Full Stack Developer
+Anjali Tomar - Full Stack Developer
 
 ## 🙏 Acknowledgments
 
@@ -252,4 +252,3 @@ Your Name - Full Stack Developer
 
 **Backend API**: [Your Render URL]
 
-**Documentation**: See [SETUP_INSTRUCTIONS.md](SETUP_INSTRUCTIONS.md) for detailed setup guide
