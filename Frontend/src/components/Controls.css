@@ -1,0 +1,143 @@
+.controls-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+.control-group label {
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.label-icon {
+  font-size: 1.2rem;
+}
+
+.color-picker {
+  width: 50px;
+  height: 40px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-picker:hover {
+  transform: scale(1.1);
+}
+
+.color-value {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #666;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5568d3 0%, #65408b 100%);
+}
+
+.btn-secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.btn-secondary:hover {
+  background: #667eea;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .controls-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-group {
+    min-width: 100%;
+    justify-content: space-between;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
